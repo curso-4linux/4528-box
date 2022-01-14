@@ -29,9 +29,9 @@ Vagrant.configure('2') do |config|
       end
       k.vm.provision 'ansible_local' do |ansible|
         ansible.playbook = "#{conf['provision']}"
+        ansible.compatibility_mode = '2.0'
       end
   end
-
     config.vm.provision "shell", inline: <<-SHELL
       sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' /etc/ssh/sshd_config
       systemctl restart sshd

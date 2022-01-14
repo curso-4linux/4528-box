@@ -24,7 +24,7 @@
         state: present
       vars:
         packages:
-        - policycoreutils-python
+        - policycoreutils-python-utils
         - git
         - net-tools
         - tzdata

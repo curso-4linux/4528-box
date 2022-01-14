@@ -25,7 +25,7 @@
       vars:
         packages:
         - epel-release
-        - policycoreutils-python
+        - policycoreutils-python-utils
         - git
         - net-tools
         - java-1.8.0-openjdk
